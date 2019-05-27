@@ -1,13 +1,13 @@
 {
   "name": "@dashevo/dashcore-node",
-  "description": "Full node with extended capabilities using Dashcore and Dash Core (dashd)",
-  "author": "BitPay <dev@bitpay.com>",
+  "description": "Full node with extended capabilities using Dashcore - forked for PIVX network",
+  "author": "BitPay <dev@bitpay.com>, forked by Heavenbean <daungochoang@gmail.com>",
   "version": "5.1.3",
   "main": "./index.js",
-  "repository": "git://github.com/dashevo/dashcore-node.git",
-  "homepage": "https://github.com/dashevo/dashcore-node",
+  "repository": "git://github.com/heavenbean/dashcore-node.git",
+  "homepage": "https://github.com/heavenbean/dashcore-node",
   "bugs": {
-    "url": "https://github.com/dashevo/dashcore-node/issues"
+    "url": "https://github.com/heavenbean/dashcore-node/issues"
   },
   "contributors": [
     {
@@ -24,6 +24,10 @@
     {
       "name": "Patrick Nagurny",
       "email": "patrick@bitpay.com"
+    },
+    {
+      "name": "HoangDN",
+      "email": "daungochoang@gmail.com"
     }
   ],
   "bin": {
@@ -46,12 +50,13 @@
     "dashd"
   ],
   "dependencies": {
-    "@dashevo/dashcore-lib": "^0.17.2",
+    "@dashevo/dashcore-lib": "git+https://github.com/heavenbean/dashcore-lib.git",
     "@dashevo/dashd-rpc": "^1.2.1",
     "async": "^2.6.1",
     "body-parser": "^1.18.3",
     "colors": "^1.3.3",
     "commander": "^2.19.0",
+    "dashcore-lib": "https://github.com/heavenbean/dashcore-lib.git",
     "errno": "^0.1.7",
     "express": "^4.16.4",
     "liftoff": "^2.5.0",
